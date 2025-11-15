@@ -1,0 +1,19 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Npc" Name="NpcBase">
+		<MaxStack>1</MaxStack>
+		<Beauty>0</Beauty>
+		<MaxHitPoints>100</MaxHitPoints>
+		<UseHitPoints>1</UseHitPoints>
+		<Ling>
+			<LingThroughCost>0.01</LingThroughCost>
+			<LingNum>1</LingNum>
+			<LvUpNeedLing>1800</LvUpNeedLing>
+			<ElementKind>None</ElementKind>
+			<ElementPower>0</ElementPower>
+		</Ling>
+	<ClassName>Lua_NPC</ClassName>
+	</ThingDef>	
+
+</List></ThingDefs>
+
+

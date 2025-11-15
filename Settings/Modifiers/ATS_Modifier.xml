@@ -1,0 +1,46 @@
+﻿<ModifierDefs><List>
+	<Modifier Name="EmpoisonedThing" Type="Normal">
+		<DisplayName>药物混入</DisplayName>
+		<Desc>被人下药或食用了被下药的物品，药物的效果会在之后慢慢显现</Desc>
+		<MaxStack>1</MaxStack>	
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<LuaClassName>modifier_EmpoisonedThing</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Projectiles/Life/LifeProjectileSmall" Bip="Dummy001"/>
+		</EffectBind>
+	</Modifier> 
+
+	<Modifier Name="EnhancePerception" Type="Normal">
+		<DisplayName>增加感知范围</DisplayName>
+		<Desc>神识外放中，极大的增加感知范围\n 由于消耗巨大，使用时无法移动</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<LuaClassName>modifier_EnhancePerception</LuaClassName>
+		<Properties>
+			<li Name="MoveSpeed" AddP="-1"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_NOFIGHT</li>
+		</SpecialFlags>
+	</Modifier>	
+
+	<Modifier Name="DetectPerception" Type="Normal">
+		<DisplayName>探测神识</DisplayName>
+		<Desc>利用自身神识，对周围存在其他的神识进行侦测。</Desc>  
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<LuaClassName>modifier_DetectPerception</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="DoSteal" Type="Normal">
+		<DisplayName>妙手空空</DisplayName>
+		<Desc></Desc>  
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier>
+	
+</List></ModifierDefs>
